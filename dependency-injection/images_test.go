@@ -28,7 +28,7 @@ func TestMainTDD(t *testing.T) {
 
 	t.Run("insert", func(t *testing.T) {
 		if err := imageService.Insert("testing", "testing", "testing"); err != nil {
-			t.Errorf("Got %v, expect nil when get mock data", err.Error())
+			t.Errorf("Got %v, expect nil when insert mock data", err.Error())
 		}
 	})
 
